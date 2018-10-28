@@ -90,6 +90,9 @@ Rails.application.configure do
     config.logger = ActiveSupport::TaggedLogging.new(logger)
   end
 
+  config.action_mailer.delivery_method = :postmark
+  config.action_mailer.postmark_settings = { :api_token => "4008eb8e-3ced-4cda-bb29-9499fbfc5228" }
+
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
