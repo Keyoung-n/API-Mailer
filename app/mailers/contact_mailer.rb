@@ -1,7 +1,7 @@
 class ContactMailer < ApplicationMailer
-  default from: 'yumibixo@hiltonvr.com'
+  default from: 'train.cool.78@gmail.com'
 
   def contact_email
-    mail(to: 'keang.nage@gmail.com', subject: 'New Client')
+    mail(to: 'keangnage@gmail.com', subject: 'New Client')
   end
 end
